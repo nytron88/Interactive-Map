@@ -7,7 +7,7 @@ CORS(app)
 url = "https://us-states.p.rapidapi.com/basic"
 
 headers = {
-    "X-RapidAPI-Key": "e3d3886ad3msh3f79822ba08a235p139b2cjsnbfb548c8c822",
+    "X-RapidAPI-Key": "d7ecfc7cd0msh92a5f54c9c75918p105c8cjsnf45d6db3f185",
     "X-RapidAPI-Host": "us-states.p.rapidapi.com"
 }
 
