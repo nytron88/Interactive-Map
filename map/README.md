@@ -1,0 +1,1 @@
+Run the react app using 'npm start' and in App.js file, change the url to the port you are using. 

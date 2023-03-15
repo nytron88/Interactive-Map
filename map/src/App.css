@@ -1,0 +1,12 @@
+path {
+  pointer-events: all;
+}
+path:hover {
+  opacity: 0.50;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
