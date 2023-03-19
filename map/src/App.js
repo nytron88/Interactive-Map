@@ -5,8 +5,8 @@ import USAMap from "react-usa-map";
 
 class App extends Component {
   
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       stateName: "Click State",
         postal: "Click State",
@@ -83,7 +83,6 @@ class App extends Component {
         postal: stateCalledPostal,
         capital: data["capital"]["name"],
         population: data["population"]["total"]
-        
       })
     })
     //.then(data => alert(data.status))
@@ -100,13 +99,11 @@ class App extends Component {
           <USAMap  onClick={this.mapHandler} />
         </div>
         <div>
-          {Object.keys(this.state).map(key => 
-            <p key={key}>{key.split("_").map(str => str[0].toUpperCase() + str.slice(1, str.length)).join(" ") + " : " + this.state[key]}</p>
-          )}
-
-          
+          <p>State Name: {this.state.stateName}</p>
+          <p>Postal: {this.state.postal}</p>
+          <p>Capital: {this.state.capital}</p>
+          <p>Population: {this.state.population}</p>
         </div>
-
       </div>
     );
   }
